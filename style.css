@@ -9,7 +9,14 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background: url(./media/assets/HomePg.PNG) no-repeat;
+  background-size: cover;
+  filter: brightness(50%);
+
+
 }
+
+
 
 html {
   scroll-behavior: smooth;
@@ -34,9 +41,11 @@ nav,
 }
 
 nav {
-  justify-content: space-around;
+  padding-left: 3%;
+  padding-right: 3%;
+  justify-content: space-between;
   align-items: center;
-  height: 15vh;
+  height: 10vh;
 }
 
 .nav-links {
@@ -240,12 +249,29 @@ section {
   gap: 1rem;
 }
 
-.social-links{
-  text-align: center;
-  position: relative;
+footer {
+  padding-left: 3%;
+  padding-right: 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: transparent;
+  color: #868c96;
+  z-index: 1030;
 }
-
-.social-links img{
+footer p {
+  background: transparent;
+  padding: 40px 0;
+}
+footer div{
+  background: transparent;
+}
+footer img{
+  background: transparent;
   height: 13px;
   margin: 20px;
   cursor: pointer;

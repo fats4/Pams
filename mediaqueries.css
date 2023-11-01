@@ -13,6 +13,13 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .art .itemBox{
+    position: relative;
+    width: 103.5px;
+    height: 103.5px;
+    margin: 5px;
+    display: block;
+}
   #desktop-nav {
     display: none;
   }
@@ -67,6 +74,31 @@
   }
   .social-links{
     padding-top: 170px;
+  }
+
+  .art{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .art .itemBox{
+      position: relative;
+      width: 103.5px;
+      height: 103.5px;
+      margin: 5px;
+      display: block;
+  }
+  .art .itemBox.hide{
+      display: none;
+  }
+  .art .itemBox img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
   }
 
 }
