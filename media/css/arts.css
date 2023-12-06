@@ -1,11 +1,14 @@
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@font-face {
+  font-family: 'Apollo';
+  src: url(/media/assets/font/APOLLO.otf);
+}
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    background-color: white;
 }
 body{
     font-family: "Poppins", sans-serif;
@@ -14,9 +17,10 @@ html{
     scroll-behavior: smooth;
 }  
 p{
-    color: rgb(85, 85, 85);
-    padding-top: 20px;
-    text-align: center;
+  font-family: 'Apollo', sans-serif;
+  color: black;
+  padding-top: 20px;
+  text-align: center;
 }
 
 /* NAV */
@@ -40,22 +44,23 @@ nav {
 }
 
 a {
-  color: black;
+  font-family: 'Apollo', sans-serif;
+  color: white;
   text-decoration: none;
   text-decoration-color: white;
 }
 
 a:hover {
-  color: grey;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  color: gray;
 }
 
 .logo {
   font-size: 2rem;
 }
-
+.logo img{
+  padding-top: 50px;
+  height: 250px;
+}
 .logo:hover {
   cursor: default;
 }
@@ -78,12 +83,13 @@ a:hover {
   height: 24px;
   width: 30px;
   cursor: pointer;
+  color: white;
 }
 
 .hamburger-icon span {
   width: 100%;
-  height: 2px;
-  background-color: black;
+  height: 4px;
+  background-color: white;
   transition: all 0.3 ease-in-out;
 }
 
@@ -103,7 +109,7 @@ a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: black;
+  color: white;
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
@@ -160,15 +166,14 @@ section ul{
 }
 section ul li{
     list-style: none;
-    background: #eee;
+
     padding: 12px 20px;
     margin: 5px;
     letter-spacing: 1px;
     cursor: pointer;
 }
 section ul li.active{
-    background: #03a9f4;
-    color: #fff;
+    color: black;
 }
 section h1{
     font-size: 1.5rem;
@@ -182,14 +187,53 @@ section h1{
 }
 .art .itemBox{
     position: relative;
-    width: 335px;
-    height: 335px;
+    width: 790px;
+    height: 870px;
     margin: 5px;
     display: block;
 }
+.photoby{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.6s;
+}
+.photoby:hover{
+  opacity: 1;
+}
+.photoby h1{
+  font-size: 45px;
+  color: white;
+  background-color: transparent;
+}
+.photoby > *{
+  transform: translateY(25px);
+  transition: transform 0.6s;
+}
+.photoby:hover > *{
+  transform: translateY(0px);
+}
+
+.art .itemBox.active{
+  position: relative;
+  width: 335px;
+  height: 335px;
+  margin: 5px;
+  display: block;
+}
+
 .art .itemBox.hide{
     display: none;
 }
+
 .art .itemBox img{
     position: absolute;
     top: 0;

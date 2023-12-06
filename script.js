@@ -7,6 +7,7 @@ function toggleMenu() {
 
 let list = document.querySelectorAll('.list');
         let itemBox = document.querySelectorAll('.itemBox');
+        let itemBox1 = document.querySelectorAll('.itemBox1');
 
         for(let i = 0; i<list.length; i++){
             list[i].addEventListener('click', function(){
@@ -26,6 +27,5 @@ let list = document.querySelectorAll('.list');
                         itemBox[k].classList.add('active');
                     }
                 }
-
             })
         }

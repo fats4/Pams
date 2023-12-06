@@ -1,6 +1,9 @@
 /* GENERAL */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@font-face {
+  font-family: 'Apollo';
+  src: url(./media/assets/font/APOLLO.otf);
+}
 
 * {
   margin: 0;
@@ -8,12 +11,9 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Apollo', sans-serif;
   background: url(./media/assets/HomePg.PNG) no-repeat;
   background-size: cover;
-  filter: brightness(50%);
-
-
 }
 
 
@@ -23,7 +23,7 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: white;
 }
 
 /* TRANSITION */
@@ -35,14 +35,16 @@ a,
 
 /* DESKTOP NAV */
 
+
 nav,
 .nav-links {
   display: flex;
 }
 
 nav {
-  padding-left: 3%;
-  padding-right: 3%;
+  padding-top: 1%;
+  padding-left: 0.5%;
+  padding-right: 4%;
   justify-content: space-between;
   align-items: center;
   height: 10vh;
@@ -55,14 +57,15 @@ nav {
 }
 
 a {
-  color: black;
+  font-family: 'Apollo', sans-serif;
+  color: white;
   text-decoration: none;
   text-decoration-color: white;
 }
 
 a:hover {
-  color: grey;
-  text-decoration: underline;
+  color: black;
+  text-decoration: none;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
 }
@@ -70,7 +73,10 @@ a:hover {
 .logo {
   font-size: 2rem;
 }
-
+.logo img{
+  padding-top: 50px;
+  height: 250px;
+}
 .logo:hover {
   cursor: default;
 }
@@ -97,8 +103,8 @@ a:hover {
 
 .hamburger-icon span {
   width: 100%;
-  height: 2px;
-  background-color: black;
+  height: 4px;
+  background-color: white;
   transition: all 0.3 ease-in-out;
 }
 
@@ -163,20 +169,17 @@ section {
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
-}
-
-.section-container {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 /* PROFILE SECTION */
 
 #profile {
-  max-width: 50rem;
+  max-width: 80rem;
   margin: 0 auto;
-  position: relative;
   justify-content: center;
-  gap: 5rem;
 }
 
 #profile p {
@@ -184,14 +187,41 @@ section {
   text-align: center;
 }
 
-.section__pic-container {
-  justify-content: center;
-  width: 800px;
-  height: auto;
+.abouts {
+  width: 230px;
+  height:150px;
+  cursor: pointer;
+  background-image: url(./media/assets/aboutnon.PNG);
+  background-size: cover;
+}
+.abouts:hover {
+  background-image: url(./media/assets/aboutanim.GIF);
+}
+.nfts {
+  width: 200px;
+  height:150px;
+  cursor: pointer;
+  background-image: url(./media/assets/aboutnon.PNG);
+  background-size: cover;
+}
+.artworks {
+  width: 200px;
+  height:150px;
+  cursor: pointer;
+  background-image: url(./media/assets/aboutnon.PNG);
+  background-size: cover;
 }
 
-.section__pic-container img{
-  max-width: 100%;
+.section__pic-container {
+  justify-content: center;
+  width: 825px;
+  height: 710px;
+  cursor: pointer;
+  background-image: url(./media/assets/nonanim.PNG);
+  background-size: cover;
+}
+.section__pic-container:hover{
+  background-image: url(./media/assets/animated.GIF);
 }
 
 /* ICONS */
@@ -260,19 +290,22 @@ footer {
   left: 0;
   bottom: 0;
   background: transparent;
-  color: #868c96;
+  color: #ffffff;
   z-index: 1030;
 }
 footer p {
+  font-family: 'Apollo', sans-serif;
   background: transparent;
   padding: 40px 0;
+  font-size: 20px;
 }
 footer div{
   background: transparent;
 }
 footer img{
   background: transparent;
-  height: 13px;
+  height: 20px;
   margin: 20px;
   cursor: pointer;
+  filter: invert(1);
 }
