@@ -1,75 +1,178 @@
 @media screen and (max-width: 1400px) {
   #profile {
-    height: 83vh;
     margin-bottom: 6rem;
   }
-  .about-containers {
-    flex-wrap: wrap;
-  }
-  #contact,
-  #projects {
-    height: fit-content;
+}
+
+@media screen and (max-width: 1300px){
+  .section__pic-container {
+    width: 730px;
+    height: 650px;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .art .itemBox{
-    position: relative;
-    width: 103.5px;
-    height: 103.5px;
-    margin: 5px;
-    display: block;
-}
-  #desktop-nav {
-    display: none;
-  }
-  #hamburger-nav {
-    display: flex;
-  }
-  #experience,
-  .experience-details-container {
-    margin-top: 2rem;
-  }
-  #profile,
-  .section-container {
-    display: block;
-  }
-  .arrow {
-    display: none;
-  }
-  section,
-  .section-container {
-    height: fit-content;
-  }
-  section {
-    margin: 0 5%;
+  section{
+    padding-top: 8vh;
   }
   .section__pic-container {
-    width: 600px;
-    height: 600px;
-    margin: 0 auto 2rem;
+    width: 590px;
+    height: 550px;
   }
-  .about-containers {
-    margin-top: 0;
+  .artworks {
+    width: 190px;
+    height: 170px;
+  }
+  .nfts {
+    width: 190px;
+    height:170px;
+  }
+  .abouts{
+    width: 190px;
+    height: 170px;
+  }
+  .art .itemBox {
+    position: relative;
+    width: 690px;
+    height: 770px;
+    margin: 5px;
+    display: block;
+  }
+}
+@media screen and (max-width: 1180px) {
+  body {
+    background: url(./media/assets/HomePg.PNG);
+    background-size: cover;
+  }
+  section{
+    padding-top: 10vh;
+  }
+  .section__pic-container {
+    width: 510px;
+    height: 490px;
+  }
+  .artworks {
+    width: 170px;
+    height: 150px;
+  }
+  .nfts {
+    width: 170px;
+    height:150px;
+  }
+  .abouts{
+    width: 170px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 970px) {
+  body {
+    background: url(./media/assets/HomePg.PNG);
+    background-size: cover;
+  }
+  section{
+    padding-top: 10vh;
+  }
+  .section__pic-container {
+    width: 400px;
+    height: 400px;
+  }
+  .artworks {
+    width: 170px;
+    height: 150px;
+  }
+  .nfts {
+    width: 170px;
+    height:150px;
+  }
+  .abouts{
+    width: 170px;
+    height: 150px;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 870px) {
+  #profile a {
+    width: 130px;
+    height: 130px;
+  }
+  section{
+    padding-top: 10vh;
+  }
+  .section__pic-container {
+    width: 480px;
+    height: 400px;
+  }
+  .artworks {
+    width: 130px;
+    height: 130px;
+  }
+  .nfts {
+    width: 130px;
+    height: 130px;
+  }
+  .abouts{
+    width: 130px;
+    height: 130px;
+  }
+}
+
+@media screen and (max-width: 740px) {
   #profile {
-    height: 83vh;
+    max-width: 90rem;
+    justify-content: center;
+  }
+  #profile a {
+    width: 110px;
+    height: 110px;
+  }
+  section{
+    padding-top: 18vh;
+  }
+  .section__pic-container {
+    width: 415px;
+    height: 360px;
+  }
+  .artworks {
+    width: 110px;
+    height: 110px;
+  }
+  .nfts {
+    width: 110px;
+    height: 110px;
+  }
+  .abouts{
+    width: 110px;
+    height: 110px;
+  }
+  footer img {
+    background: transparent;
+    height: 12px;
+    margin: 20px;
+    cursor: pointer;
+    filter: invert(1);
+  }
+  footer p {
+    font-family: 'Apollo', sans-serif;
+    background: transparent;
+    padding: 40px 0;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 636px) {
+  section{
+    padding-top: 10vh;
+  }
+  #profile {
+    height: 56vh;
     margin-bottom: 0;
   }
   .btn-container {
     flex-wrap: wrap;
   }
-  .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
-  }
   .section__pic-container {
-    width: auto;
-    height: 46vw;
+    width: 100vw;
+    height: 100vw;
     justify-content: center;
   }
   .social-links{
@@ -100,5 +203,17 @@
       height: 100%;
       object-fit: cover;
   }
-
+  footer img {
+    background: transparent;
+    height: 9px;
+    margin: 10px;
+    cursor: pointer;
+    filter: invert(1);
+  }
+  footer p {
+    font-family: 'Apollo', sans-serif;
+    background: transparent;
+    padding: 30px 0;
+    font-size: 10px;
+  }
 }
